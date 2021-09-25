@@ -28,6 +28,20 @@
   color: #61dafb;
 }
 
+header {
+    padding-bottom: 2em;
+}
+
+#smol {
+    width: 5em;
+    height: 5em;
+    text-align: right;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background:rgba(0,0,0,0);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
