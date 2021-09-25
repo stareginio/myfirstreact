@@ -1,8 +1,8 @@
-# Getting Started with myfirstreac
+# Getting Started with myfirstreact
 
-This project is about the first reac of the Sophie.
+This project is about the first react of the Sophie.
 You will see snails. 
 
-### snail
+### snails
 
-All hail the snail.
+All hail the snails.
