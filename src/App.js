@@ -1,5 +1,6 @@
 import logo from './logo.gif';
 import './App.css';
+import Greet from './components/Greet';
 
 function App() {
   return (
@@ -8,7 +9,8 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           s n a i l
-        </p>
+              </p>
+        <Greet></Greet>
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
         <a
           className="App-link"
