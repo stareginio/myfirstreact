@@ -9,8 +9,11 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           s n a i l
-              </p>
-        <Greet></Greet>
+        </p>
+        <p id="greet">
+            <Greet name="Snail"></Greet>
+            <Greet name="snail"></Greet>
+        </p>
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
         <a
           className="App-link"

@@ -38,6 +38,10 @@ header {
     margin: 40px 0 20px 0;
 }
 
+#greet {
+    margin: -20px 0 -20px 0;
+}
+
 #smol {
     width: 6.5em;
     height: 6.5em;

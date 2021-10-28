@@ -1,5 +1,5 @@
-function Greet() {
-    return <h1>Hello Snail</h1>
+function Greet(props) {
+    return <h1>Hello {props.name}</h1>
 }
 
 export default Greet;
