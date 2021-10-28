@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          snail
+          s n a i l
         </p>
         <img src="https://i.gifer.com/7dTK.gif" alt="snel"></img>
         <a
