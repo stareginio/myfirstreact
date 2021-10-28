@@ -1,18 +1,19 @@
 import logo from './logo.gif';
 import './App.css';
 import Greet from './components/Greet';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          s n a i l
-        </p>
+        <h1> s n a i l </h1>
+        <p><Button/></p>
+        <hr/>
         <p id="greet">
-            <Greet name="Snail"></Greet>
-            <Greet name="snail"></Greet>
+            <Greet name="Snail"/>
+            <Greet name="snail"/>
         </p>
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
         <a

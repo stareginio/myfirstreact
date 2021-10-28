@@ -1,5 +1,9 @@
-function Greet(props) {
-    return <h1>Hello {props.name}</h1>
+const Greet = (props) => {
+    return (
+        <div>
+            <p>Hello {props.name}</p>
+        </div >
+    )
 }
 
 export default Greet;
