@@ -1,7 +1,7 @@
 # Getting Started with myfirstreact
 
-This project is about the first react of Sophie.
-You will see snails. 
+This project is about the first react app of Sophie.
+You will mostly see snails in this app. 
 
 ### snails
 
