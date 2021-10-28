@@ -9,7 +9,7 @@ function App() {
         <p>
           s n a i l
         </p>
-        <img src="https://i.gifer.com/7dTK.gif" alt="snel"></img>
+        <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
         <a
           className="App-link"
           href="https://reactjs.org"
