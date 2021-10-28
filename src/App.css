@@ -34,6 +34,10 @@ header {
     padding-bottom: 2em;
 }
 
+.App-gif {
+    margin: 20px 0 20px 0;
+}
+
 #smol {
     width: 6.5em;
     height: 6.5em;
