@@ -11,18 +11,17 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
 
         <h1> s n a i l </h1>
-      
-        <Button/>
 
-        <hr/>
+        <Button />
+
+        <hr />
 
         <p id="greet">
-            <Greet name="Snail"/>
-            <Greet name="snaiL"/>
+          <Greet name="Snail" />
+          <Greet name="snaiL" />
         </p>
 
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
-
 
         <a
           className="App-link"
@@ -34,7 +33,8 @@ function App() {
         </a>
 
       </header>
-      <img id="smol" src="https://i.pinimg.com/originals/a6/06/21/a60621da98a79bfbdc0e3dd5524a32d3.gif" alt="smol snel"></img>
+      <img id="smol" src="https://i.pinimg.com/originals/a6/06/21/a60621da98a79bfbdc0e3dd5524a32d3.gif"
+        alt="smol snel"></img>
     </div>
   );
 }
