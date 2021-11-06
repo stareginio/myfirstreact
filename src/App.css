@@ -26,36 +26,41 @@
 }
 
 header {
-    padding-bottom: 2em;
+  padding-bottom: 2em;
 }
 
 .App-gif {
-    margin: 40px 0 20px 0;
+  margin: 40px 0 20px 0;
 }
 
 hr {
-    border: 2px dashed white;
-    width: 40ch;
-    margin: 2.75ch 0 30px 0;
+  border: 2px dashed white;
+  width: 40ch;
+  margin: 2.75ch 0 30px 0;
 }
 
 #greet {
-    margin: -20px 0 -20px 0;
-    line-height: 30px;
+  margin: -20px 0 -20px 0;
+  line-height: 30px;
+}
+
+#hello {
+  font-size: 12px;
+  color: white;
 }
 
 .App-link {
-    color: #ff99cc;
+  color: #ff99cc;
 }
 
 #smol {
-    width: 6.5em;
-    height: 6.5em;
-    text-align: right;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    background:rgba(0,0,0,0);
+  width: 6.5em;
+  height: 6.5em;
+  text-align: right;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  background:rgba(0,0,0,0);
 }
 
 @keyframes App-logo-spin {

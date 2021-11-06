@@ -5,8 +5,6 @@ const Hello = () => {
     // react hooks useState
     const [hello, setHello] = useState("");
 
-    return helloServices.getHello();
-
     // react hooks useEffect
     // axios - tool for http request promises
     // promises - asynch processes
