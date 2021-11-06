@@ -2,6 +2,7 @@ import logo from './logo.gif';
 import './App.css';
 import Greet from './components/Greet';
 import Button from './components/Button';
+import Hello from './components/Hello';
 
 function App() {
   return (
@@ -20,6 +21,8 @@ function App() {
           <Greet name="Snail" />
           <Greet name="snaiL" />
         </p>
+
+        {/* <p>{ Hello() }</p> */}
 
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
 
