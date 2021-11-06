@@ -29,11 +29,11 @@ function App() {
 
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://www.youtube.com/watch?v=Tt7bzxurJ1I"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn Snail
+          A dancing stick bug video to brighten up your day
         </a>
 
       </header>
