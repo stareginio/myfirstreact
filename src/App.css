@@ -25,11 +25,12 @@ header {
 }
 
 h1 {
-  margin-bottom: -5px;
+  margin-bottom: -15px;
 }
 
 #hello {
-  font-size: 18px;
+  font-size: 14px;
+  font-style: oblique;
   color: white;
   margin-bottom: 2.5em;
 }
