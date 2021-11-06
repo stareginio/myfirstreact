@@ -33,7 +33,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          a cute dancing stick bug video
+          here's a cute dancing stick bug video
         </a>
 
       </header>

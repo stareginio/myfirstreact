@@ -13,12 +13,6 @@
   color: white;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 100s linear;
-  }
-}
-
 .App-logo {
   margin-top: .55in;
   height: 20vmin;
@@ -47,12 +41,12 @@ hr {
 }
 
 #greet {
-  margin: -20px 0 -20px 0;
+  margin: -20px 0 0 0;
   line-height: 30px;
 }
 
 .App-gif {
-  margin: 40px 0 20px 0;
+  margin: 60px 0 20px 0;
 }
 
 .App-link {
@@ -67,6 +61,12 @@ hr {
   right: 0;
   bottom: 0;
   background:rgba(0,0,0,0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 100s linear;
+  }
 }
 
 @keyframes App-logo-spin {
