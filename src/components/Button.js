@@ -1,5 +1,6 @@
 import React from 'react';
 import './Button.css';
+import Emoji from './Emoji.js';
 
 // stateful component
 class Button extends React.Component {
@@ -11,19 +12,23 @@ class Button extends React.Component {
     }
 
     addCounter() {
-        this.setState({count: this.state.count + 1})
+        this.setState({ count: this.state.count + 1 })
     }
 
     resetCounter() {
-        this.setState({count: 0})
+        this.setState({ count: 0 })
     }
 
     render() {
         return (
             <div>
-                <p>current count = {this.state.count}</p>
-                <button onClick = {(e) => this.addCounter(e)}> add me!! </button>
-                <button onClick={(e) => this.resetCounter(e)}> reset me!! </button> 
+                <p>
+                    <Emoji symbol="🐌 " />
+                    current count = {this.state.count}
+                    <Emoji symbol=" 🐌" />
+                </p>
+                <button onClick={(e) => this.addCounter(e)}> add me!! </button>
+                <button onClick={(e) => this.resetCounter(e)}> reset me!! </button>
             </div >
         )
     }

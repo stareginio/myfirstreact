@@ -1,8 +1,10 @@
 import logo from './logo.gif';
 import './App.css';
-import Greet from './components/Greet';
+
 import Button from './components/Button';
+import Greet from './components/Greet';
 import Hello from './components/Hello';
+
 
 // functional component = stateless component
 function App() {
@@ -25,7 +27,10 @@ function App() {
           <Greet name="Snail Jr." />
         </p>
 
-        <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
+        <img src="https://i.gifer.com/7dTK.gif"
+          className="App-gif"
+          alt="snel gif">
+        </img>
 
         <a
           className="App-link"
@@ -37,7 +42,8 @@ function App() {
         </a>
 
       </header>
-      <img id="smol" src="https://i.pinimg.com/originals/a6/06/21/a60621da98a79bfbdc0e3dd5524a32d3.gif"
+      <img id="smol"
+        src="https://i.pinimg.com/originals/a6/06/21/a60621da98a79bfbdc0e3dd5524a32d3.gif"
         alt="smol snel"></img>
     </div>
   );
