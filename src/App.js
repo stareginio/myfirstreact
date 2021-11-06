@@ -14,16 +14,16 @@ function App() {
 
         <h1> s n a i l </h1>
 
+        <p id="hello"> {Hello()} </p>
+
         <Button />
 
         <hr />
 
         <p id="greet">
-          <Greet name="Snail" />
-          <Greet name="snaiL" />
+          <Greet name="Snail Sr." />
+          <Greet name="Snail Jr." />
         </p>
-
-        <p> {Hello()} </p>
 
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
 
