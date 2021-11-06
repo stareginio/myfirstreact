@@ -4,6 +4,7 @@ import Greet from './components/Greet';
 import Button from './components/Button';
 import Hello from './components/Hello';
 
+// functional component = stateless component
 function App() {
   return (
     <div className="App">
@@ -22,7 +23,7 @@ function App() {
           <Greet name="snaiL" />
         </p>
 
-        {/* <p>{ Hello() }</p> */}
+        <p> {Hello()} </p>
 
         <img src="https://i.gifer.com/7dTK.gif" className="App-gif" alt="snel gif"></img>
 

@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import helloServices from '../services/helloServices';
 
 const Hello = () => {
-    // react hooks
+    // react hooks useState
     const [hello, setHello] = useState("");
 
     return helloServices.getHello();
