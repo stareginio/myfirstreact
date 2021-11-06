@@ -1,6 +1,6 @@
 import React from 'react';
 import './Button.css';
-import Emoji from './Emoji.js';
+import Emoji from './Emoji';
 
 // stateful component
 class Button extends React.Component {

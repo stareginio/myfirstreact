@@ -1,7 +1,9 @@
+import Emoji from './Emoji';
+
 const Greet = (props) => {
     return (
         <div>
-            <p>Hello {props.name}</p>
+            <p><Emoji symbol="👋" /> Hello {props.name}</p>
         </div >
     )
 }
