@@ -21,7 +21,7 @@ const Hello = () => {
     }
     )
 
-    return helloServices.getHello();
+    return hello;
 }
 
 export default Hello;
