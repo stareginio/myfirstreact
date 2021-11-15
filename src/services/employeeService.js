@@ -4,4 +4,4 @@ const getEmployee = () => {
     return httpclient.get('/employees')
 }
 
-export default getEmployee
+export default { getEmployee };

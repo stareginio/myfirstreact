@@ -2,6 +2,7 @@ import logo from './logo.gif';
 import './App.css';
 
 import Button from './components/Button';
+import Employee from './components/Employee';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
 
@@ -24,6 +25,10 @@ function App() {
           <Greet name="Snail Sr." />
           <Greet name="Snail Jr." />
         </p>
+
+        <hr />
+
+        <Employee />
 
         <img src="https://i.gifer.com/7dTK.gif"
           className="App-gif"
