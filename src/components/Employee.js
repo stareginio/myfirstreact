@@ -30,13 +30,13 @@ const Employee = () => {
                     </tr>
                     {
                         employees.map(
-                            employee => {
+                            employee => (
                                 <tr>
                                     <td>{employee.name}</td>
                                     <td>{employee.department}</td>
                                     <td>{employee.location}</td>
                                 </tr>
-                            }
+                            )
                         )
                     }
                 </table>
