@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import employeeService from '../services/employeeService'
+import './Employee.css';
 
 const Employee = () => {
     const [employees, setEmployees] = useState([])
@@ -19,28 +20,26 @@ const Employee = () => {
     })
 
     return (
-        <div>
-            <h3>List of Employees</h3>
-            <div>
-                <table border="1.5">
-                    <tr>
-                        <td>Name</td>
-                        <td>Location</td>
-                        <td>Department</td>
-                    </tr>
-                    {
-                        employees.map(
-                            employee => (
-                                <tr>
-                                    <td>{employee.name}</td>
-                                    <td>{employee.department}</td>
-                                    <td>{employee.location}</td>
-                                </tr>
-                            )
+        <div id="employee">
+            <h2>List of Employees</h2>
+            <table border="1.5">
+                <tr>
+                    <td>Name</td>
+                    <td>Location</td>
+                    <td>Department</td>
+                </tr>
+                {
+                    employees.map(
+                        employee => (
+                            <tr>
+                                <td>{employee.name}</td>
+                                <td>{employee.department}</td>
+                                <td>{employee.location}</td>
+                            </tr>
                         )
-                    }
-                </table>
-            </div>
+                    )
+                }
+            </table>
         </div>
     )
 }

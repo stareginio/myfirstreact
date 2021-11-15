@@ -21,10 +21,10 @@ function App() {
 
         <hr />
 
-        <p id="greet">
+        <div id="greet">
           <Greet name="Snail Sr." />
           <Greet name="Snail Jr." />
-        </p>
+        </div>
 
         <hr />
 

@@ -27,8 +27,16 @@ class Button extends React.Component {
                     current count = {this.state.count}
                     <Emoji symbol=" 🐌" />
                 </p>
-                <button onClick={(e) => this.addCounter(e)}> add me!! </button>
-                <button onClick={(e) => this.resetCounter(e)}> reset me!! </button>
+                <button
+                    id="button"
+                    onClick={(e) => this.addCounter(e)}>
+                    add me!!
+                </button>
+                <button
+                    id="button"
+                    onClick={(e) => this.resetCounter(e)}>
+                    reset me!!
+                </button>
             </div >
         )
     }
