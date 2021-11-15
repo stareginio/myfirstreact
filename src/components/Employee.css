@@ -16,12 +16,12 @@
 }
 
 #employee td {
-    font-size: 16px;
-    padding: 6px 45px 6px 45px;
+    font-size: 15px;
+    padding: 5px 45px 5px 45px;
 }
 
 #employee tr:nth-child(even) {
-    background: rgba(121, 83, 106, 0.589);
+    background: rgba(143, 110, 130, 0.514);
 }
 
 #employee tr:nth-child(1) {

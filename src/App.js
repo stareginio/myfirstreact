@@ -30,6 +30,8 @@ function App() {
 
         <Employee />
 
+        <hr />
+
         <img src="https://i.gifer.com/7dTK.gif"
           className="App-gif"
           alt="snel gif">
