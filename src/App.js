@@ -5,12 +5,10 @@ import Button from './components/Button';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
 
-
 // functional component = stateless component
 function App() {
   return (
     <div className="App">
-
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
@@ -44,7 +42,8 @@ function App() {
       </header>
       <img id="smol"
         src="https://i.pinimg.com/originals/a6/06/21/a60621da98a79bfbdc0e3dd5524a32d3.gif"
-        alt="smol snel"></img>
+        alt="smol snel">
+      </img>
     </div>
   );
 }
