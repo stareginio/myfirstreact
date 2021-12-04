@@ -1,3 +1,7 @@
+* {
+    cursor: url(cursor.png), auto;
+}
+
 .App {
     background-image: url(grass.png);
     min-height: 100vh;
@@ -8,7 +12,6 @@
     text-align: center;
     color: white; 
     padding-bottom: 3em;
-    cursor: url(cursor.png), auto;
 }
 
 .App-logo {
