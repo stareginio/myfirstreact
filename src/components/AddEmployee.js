@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { useNavigate } from 'react-router'
+import { useNavigate, useParams } from 'react-router'
 import employeeService from '../services/EmployeeService';
 
 const AddEmployee = () => {
@@ -8,24 +8,46 @@ const AddEmployee = () => {
     const [location, setLocation] = useState("");
     const [department, setDepartment] = useState("");
     const navigate = useNavigate();
+    const { id } = useParams();
 
     const saveEmployee = (e) => {
         e.preventDefault();
 
-        const employee = { name, location, department };
-        employeeService.postEmployee(employee) //promise
-            .then(
-                response => {
-                    console.log("added new employee!", response.data)
-                    navigate("/employee")
-                }
-            )
+        // updates existing employee
+        if (id) {
+            const employee = { id, name, location, department };
+            employeeService.postEmployee(employee) //promise
+                .then(
+                    response => {
+                        console.log("updated employee!", response.data)
+                        navigate("/employee")
+                    }
+                )
 
-            .catch(
-                error => {
-                    console.error("something went wrong...")
-                }
-            )
+                .catch(
+                    error => {
+                        console.error("something went wrong...")
+                    }
+                )
+        }
+
+        // adds new employee
+        else {
+            const employee = { name, location, department };
+            employeeService.postEmployee(employee) //promise
+                .then(
+                    response => {
+                        console.log("added new employee!", response.data)
+                        navigate("/employee")
+                    }
+                )
+
+                .catch(
+                    error => {
+                        console.error("something went wrong...")
+                    }
+                )
+        }
     }
 
     return (

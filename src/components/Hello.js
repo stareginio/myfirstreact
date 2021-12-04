@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import helloServices from '../services/helloServices';
+import helloServices from '../services/HelloServices';
 
 // class - stateful function
 // function - stateless
