@@ -4,9 +4,9 @@ import employeeService from '../services/EmployeeService';
 
 const AddEmployee = () => {
 
-    const [name, setName] = useState("");
-    const [location, setLocation] = useState("");
-    const [department, setDepartment] = useState("");
+    const [name, setName] = useState('');
+    const [location, setLocation] = useState('');
+    const [department, setDepartment] = useState('');
     const navigate = useNavigate();
     const { id } = useParams();
 
@@ -19,14 +19,14 @@ const AddEmployee = () => {
             employeeService.postEmployee(employee) //promise
                 .then(
                     response => {
-                        console.log("updated employee!", response.data)
-                        navigate("/employee")
+                        console.log('updated employee!', response.data)
+                        navigate('/employee')
                     }
                 )
 
                 .catch(
                     error => {
-                        console.error("something went wrong...")
+                        console.error('something went wrong...')
                     }
                 )
         }
@@ -37,14 +37,14 @@ const AddEmployee = () => {
             employeeService.postEmployee(employee) //promise
                 .then(
                     response => {
-                        console.log("added new employee!", response.data)
-                        navigate("/employee")
+                        console.log('added new employee!', response.data)
+                        navigate('/employee')
                     }
                 )
 
                 .catch(
                     error => {
-                        console.error("something went wrong...")
+                        console.error('something went wrong...')
                     }
                 )
         }
