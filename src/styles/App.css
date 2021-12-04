@@ -45,33 +45,26 @@ h2 {
 }
 
 .form-entry {
-    width: 20ch;
+    padding: 0 12px 12px 12px;
 }
 
-::-webkit-input-placeholder {
-    text-align: center;
+.form-control {
+    border-radius: 0 !important;
 }
 
- :-moz-placeholder { /* Firefox 18- */
-    text-align: center;  
-}
-
- ::-moz-placeholder {  /* Firefox 19+ */
-    text-align: center;  
-}
-
-:-ms-input-placeholder {  
-    text-align: center; 
+input[type=text] {
+    padding: 5px 10px 5px 10px;
 }
 
 label {
-    font-size: 20.5px;
-    
+    font-size: 20px;
 }
 
 button {
     background-color: rgb(192, 89, 140, 0.85) !important;
     border: none !important;
+    width: 15ch;
+    height: 4ch;
     font-family: 'Courier New', Helvetica, sans-serif !important;
     color: white;
     font-size: .65em !important;
@@ -86,20 +79,32 @@ button {
     display: inline-table;
     margin: 2px .25in 0 .25in;
     cursor: pointer;
+    border-radius: .25rem;
+}
+
+#UpdateButton {
+    background-color: rgb(192, 89, 140, 0.85) !important;
+    border: none !important;
+    width: 12ch;
+    font-size: 13.5px;
+}
+
+#SaveButton {
+    margin-top: 25px;
 }
 
 td {
-    font-size: 17.5px;
+    font-size: 14px;
     line-height: 30px;
-    padding: 5px 45px 5px 45px;
+    padding: 6px 45px 6px 45px;
 }
 
 tr:nth-child(even) {
-    background: rgba(143, 110, 130, 0.514);
+    background: rgba(143, 102, 127, 0.55);
 }
 
 tr:nth-child(1) {
-    background: rgba(175, 77, 126, 0.829);
+    background: rgba(175, 77, 126, 0.83);
 }
 
 @media (prefers-reduced-motion: no-preference) {
