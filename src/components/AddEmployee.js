@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
+import { useNavigate } from 'react-router'
 import employeeService from '../services/EmployeeService';
 
 const AddEmployee = () => {
@@ -6,13 +7,17 @@ const AddEmployee = () => {
     const [name, setName] = useState("");
     const [location, setLocation] = useState("");
     const [department, setDepartment] = useState("");
+    const navigate = useNavigate();
 
     const saveEmployee = (e) => {
+        e.preventDefault();
+
         const employee = { name, location, department };
         employeeService.postEmployee(employee) //promise
             .then(
                 response => {
                     console.log("added new employee!", response.data)
+                    navigate("/employee")
                 }
             )
 
@@ -50,26 +55,6 @@ const AddEmployee = () => {
 
                 <div className="form-entry">
                     <label
-                        for="InputLocation"
-                        class="form-label">
-
-                        Location
-                    </label>
-                    <input
-                        type="text"
-                        class="form-control"
-                        id="InputLocation"
-                        placeholder="Input employee location here"
-                        onChange={
-                            (e) => {
-                                setLocation(e.target.value)
-                            }
-                        }
-                    />
-                </div>
-
-                <div className="form-entry">
-                    <label
                         for="InputDepartment"
                         class="form-label">
 
@@ -88,10 +73,30 @@ const AddEmployee = () => {
                     />
                 </div>
 
+                <div className="form-entry">
+                    <label
+                        for="InputLocation"
+                        class="form-label">
+
+                        Location
+                    </label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="InputLocation"
+                        placeholder="Input employee location here"
+                        onChange={
+                            (e) => {
+                                setLocation(e.target.value)
+                            }
+                        }
+                    />
+                </div>
+
                 <button
                     type="submit"
-                    className="btn btn-primary">
-                    onClick={(e) => saveEmployee(e)}
+                    className="btn btn-primary"
+                    onClick={(e) => saveEmployee(e)}>
 
                     Save
                 </button>

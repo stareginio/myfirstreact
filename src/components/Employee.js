@@ -24,8 +24,8 @@ const Employee = () => {
             <table border="1.5">
                 <tr>
                     <td>Name</td>
-                    <td>Location</td>
                     <td>Department</td>
+                    <td>Location</td>
                 </tr>
                 {
                     employees.map(
