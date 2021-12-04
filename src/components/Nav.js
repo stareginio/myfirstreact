@@ -25,11 +25,11 @@ const Nav = () => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <div className="navbar-nav" id="navbarNavAltMarkup">
-                        <a className="nav-link" aria-current="page" href="/">Home</a>
-                        <a className="nav-link" href="/employees">Employees</a>
-                        <a className="nav-link" href="/add">Add Employees</a>
-                        <a className="nav-link" href="/remove">Remove Employees</a>
-                        <a className="nav-link" href="/edit">Edit Employees</a>
+                        <a className="nav-link" aria-current="page" href="/myfirstreact">Home</a>
+                        <a className="nav-link" href="/myfirstreact/employees">Employees</a>
+                        <a className="nav-link" href="/myfirstreact/add">Add Employees</a>
+                        <a className="nav-link" href="/myfirstreact/remove">Remove Employees</a>
+                        <a className="nav-link" href="/myfirstreact/edit">Edit Employees</a>
                         <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
                     </div>
                 </div>
@@ -39,3 +39,5 @@ const Nav = () => {
 }
 
 export default Nav;
+
+// add/remove "/myfirstreact"

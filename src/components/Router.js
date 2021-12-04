@@ -9,10 +9,10 @@ const Router = () => {
         <div>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" exact element={<Home />} />
-                    <Route path="/employees" exact element={<Employee />} />
-                    <Route path="/add" exact element={<AddEmployee />} />
-                    <Route path="/edit/:id" exact element={<AddEmployee />} />
+                    <Route path="/myfirstreact" exact element={<Home />} />
+                    <Route path="/myfirstreact/employees" exact element={<Employee />} />
+                    <Route path="/myfirstreact/add" exact element={<AddEmployee />} />
+                    <Route path="/myfirstreact/edit/:id" exact element={<AddEmployee />} />
                     <Route path="*" exact element={<PageNotFound />} />
                 </Routes>
             </BrowserRouter>
@@ -22,5 +22,6 @@ const Router = () => {
 
 export default Router;
 
-// references
+// directory for github page
 // https://dev.to/janjibdev/problem-with-react-router-app-and-github-pages-lij
+// add/remove "/myfirstreact"
