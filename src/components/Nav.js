@@ -26,10 +26,10 @@ const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <div className="navbar-nav" id="navbarNavAltMarkup">
                         <a className="nav-link" aria-current="page" href="/myfirstreact">Home</a>
-                        <a className="nav-link" href="https://stareginio.github.io/myfirstreact/employees">Employees</a>
-                        <a className="nav-link" href="https://stareginio.github.io/myfirstreact/add">Add Employees</a>
-                        <a className="nav-link" href="https://stareginio.github.io/myfirstreact/remove">Remove Employees</a>
-                        <a className="nav-link" href="https://stareginio.github.io/myfirstreact/edit">Edit Employees</a>
+                        <a className="nav-link" href="/employees">Employees</a>
+                        <a className="nav-link" href="/add">Add Employees</a>
+                        <a className="nav-link" href="/remove">Remove Employees</a>
+                        <a className="nav-link" href="/edit">Edit Employees</a>
                         <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
                     </div>
                 </div>
