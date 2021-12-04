@@ -17,7 +17,7 @@
   margin-top: .65in;
   height: 20vmin;
   pointer-events: none;
-  margin-bottom: -30px;
+  margin-bottom: 10px;
 }
 
 header {
@@ -36,9 +36,9 @@ h1 {
 }
 
 hr {
-  border: 2px dashed white;
-  width: 40ch;
-  margin: 2.5ch 0 2.5ch 0;
+  border: 2px dashed white !important;
+  width: 40ch !important;
+  margin: 2.5ch 0 2.5ch 0 !important;
 }
 
 #greet {

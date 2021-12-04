@@ -1,16 +1,19 @@
 import logo from './logo.gif';
-import './App.css';
+import './styles/App.css';
 
 import Button from './components/Button';
 import Employee from './components/Employee';
 import Greet from './components/Greet';
 import Hello from './components/Hello';
+import Nav from './components/Nav';
 
 // functional component = stateless component
 function App() {
   return (
     <div className="App">
+      <Nav />
       <header className="App-header">
+
         <img src={logo} className="App-logo" alt="logo" />
 
         <h1> s n a i l </h1>

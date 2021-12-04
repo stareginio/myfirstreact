@@ -1,17 +1,15 @@
 const Nav = () => {
     return (
-        <nav class="navbar navbar-light" style="background-color: rgb(192, 89, 140, 0.85);">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        <a class="nav-link" href="#">Features</a>
-                        <a class="nav-link" href="#">Pricing</a>
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <div className="container-fluid">
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="navbar-nav" id="navbarNavAltMarkup">
+                        <a className="nav-link" aria-current="page" href="/">Home</a>
+                        <a className="nav-link" href="/">Employees</a>
+                        <a className="nav-link" href="/">Add Employees</a>
+                        <a className="nav-link" href="/">Edit Employees</a>
+                        <a className="nav-link" href="/">Remove Employees</a>
+                        <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
                     </div>
                 </div>
             </div>
