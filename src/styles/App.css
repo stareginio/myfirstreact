@@ -8,6 +8,7 @@
     text-align: center;
     color: white; 
     padding-bottom: 3em;
+    cursor: url(cursor.png), auto;
 }
 
 .App-logo {
@@ -26,6 +27,10 @@
     font-style: oblique;
     color: white;
     margin-bottom: 2.5em;
+}
+
+a, button, input[type=text] {
+    cursor: url(cursor_hover.png), auto !important;
 }
 
 hr {
@@ -70,10 +75,6 @@ button {
     font-size: .65em !important;
 }
 
-button:hover {
-    cursor: url('./cursor_hover.png'), default;
-}
-
 #ctr-button {
     width: 20ch;
     height: 4ch;
@@ -82,7 +83,6 @@ button:hover {
     text-decoration: none;
     display: inline-table;
     margin: 2px .25in 0 .25in;
-    cursor: pointer;
     border-radius: .25rem;
 }
 
