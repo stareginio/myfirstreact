@@ -12,6 +12,7 @@ const Router = () => {
                     <Route path="/" exact element={<Home />} />
                     <Route path="/employees" exact element={<Employee />} />
                     <Route path="/add" exact element={<AddEmployee />} />
+                    <Route path="/edit/:id" exact element={<AddEmployee />} />
                     <Route path="*" exact element={<PageNotFound />} />
                 </Routes>
             </BrowserRouter>
