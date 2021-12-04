@@ -33,10 +33,6 @@ a, button, input[type=text] {
     cursor: url(cursor_hover.png), auto !important;
 }
 
-a:hover {
-    color: rgba(196, 121, 240, 0.849) !important;
-}
-
 hr {
     border: 2px dashed white !important;
     width: 100%;

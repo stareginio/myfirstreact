@@ -10,6 +10,10 @@
   color: #ff99cc;
 }
 
+.Home-link:hover {
+  color: rgba(196, 121, 240, 0.849);
+}
+
 #smol {
   width: 6.5em;
   height: 6.5em;
