@@ -1,9 +1,4 @@
-.Home {
-  text-align: center;
-}
-
 .Home-header {
-  background-image: url(grass.png);
   min-height: 100vh;
   display: flex;
   flex-direction: column;

@@ -31,10 +31,6 @@ function Home() {
 
                 <hr />
 
-                <Employee />
-
-                <hr />
-
                 <img src="https://i.gifer.com/7dTK.gif"
                     className="Home-gif"
                     alt="snel gif">

@@ -1,3 +1,5 @@
+import './styles/App.css'
+
 import Router from './components/Router';
 import Nav from './components/Nav';
 

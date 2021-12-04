@@ -13,7 +13,7 @@ const Nav = () => {
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <div className="navbar-nav" id="navbarNavAltMarkup">
                         <a className="nav-link" aria-current="page" href="/">Home</a>
-                        <a className="nav-link" href="/">Employees</a>
+                        <a className="nav-link" href="/employee">Employees</a>
                         <a className="nav-link" href="/">Add Employees</a>
                         <a className="nav-link" href="/">Edit Employees</a>
                         <a className="nav-link" href="/">Remove Employees</a>
