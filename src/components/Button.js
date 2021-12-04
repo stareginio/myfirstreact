@@ -1,5 +1,4 @@
 import React from 'react';
-import '../styles/Button.css';
 import Emoji from './Emoji';
 
 // stateful component
@@ -28,12 +27,12 @@ class Button extends React.Component {
                     <Emoji symbol=" 🐌" />
                 </p>
                 <button
-                    id="button"
+                    id="ctr-button"
                     onClick={(e) => this.addCounter(e)}>
                     add me!!
                 </button>
                 <button
-                    id="button"
+                    id="ctr-button"
                     onClick={(e) => this.resetCounter(e)}>
                     reset me!!
                 </button>

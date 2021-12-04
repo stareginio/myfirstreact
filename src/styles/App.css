@@ -7,6 +7,7 @@
     font-size: calc(10px + 2vmin);
     text-align: center;
     color: white; 
+    padding-bottom: 3em;
 }
 
 .App-logo {
@@ -18,6 +19,13 @@
 
 #logo-name {
     margin-bottom: 5px;
+}
+
+#hello {
+    font-size: 14px;
+    font-style: oblique;
+    color: white;
+    margin-bottom: 2.5em;
 }
 
 hr {
@@ -36,12 +44,52 @@ h2 {
                     1px 1px 0 rgba(184, 184, 184, 0.795); 
 }
 
-form {
-    font-size: 15px;
+.form-entry {
+    width: 20ch;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+}
+
+ :-moz-placeholder { /* Firefox 18- */
+    text-align: center;  
+}
+
+ ::-moz-placeholder {  /* Firefox 19+ */
+    text-align: center;  
+}
+
+:-ms-input-placeholder {  
+    text-align: center; 
+}
+
+label {
+    font-size: 20.5px;
+    
+}
+
+button {
+    background-color: rgb(192, 89, 140, 0.85) !important;
+    border: none !important;
+    font-family: 'Courier New', Helvetica, sans-serif !important;
+    color: white;
+    font-size: .65em !important;
+}
+
+#ctr-button {
+    width: 20ch;
+    height: 4ch;
+    font-size: .65em !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-table;
+    margin: 2px .25in 0 .25in;
+    cursor: pointer;
 }
 
 td {
-    font-size: 15px;
+    font-size: 17.5px;
     line-height: 30px;
     padding: 5px 45px 5px 45px;
 }

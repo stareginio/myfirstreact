@@ -66,7 +66,7 @@ const AddEmployee = () => {
                         type="text"
                         class="form-control"
                         id="InputName"
-                        placeholder="Input employee name here"
+                        placeholder="Enter the name"
                         onChange={
                             (e) => {
                                 setName(e.target.value)
@@ -86,7 +86,7 @@ const AddEmployee = () => {
                         type="text"
                         class="form-control"
                         id="InputDepartment"
-                        placeholder="Input employee department here"
+                        placeholder="Enter the department"
                         onChange={
                             (e) => {
                                 setDepartment(e.target.value)
@@ -106,7 +106,7 @@ const AddEmployee = () => {
                         type="text"
                         class="form-control"
                         id="InputLocation"
-                        placeholder="Input employee location here"
+                        placeholder="Enter the location"
                         onChange={
                             (e) => {
                                 setLocation(e.target.value)
@@ -118,6 +118,7 @@ const AddEmployee = () => {
                 <button
                     type="submit"
                     className="btn btn-primary"
+                    id="SaveButton"
                     onClick={(e) => saveEmployee(e)}>
 
                     Save

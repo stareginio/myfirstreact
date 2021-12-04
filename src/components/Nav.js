@@ -1,13 +1,26 @@
 import '../styles/Nav.css';
+import icon from '../styles/snail_icon.png';
 
 const Nav = () => {
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
             <div className="container-fluid">
-                <a class="navbar-brand" href="/">Snail</a>
+                <a className="navbar-brand" href="/">
+                    Snail
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <img
+                        src={icon}
+                        id="icon"
+                        alt="snail icon"
+                        width="20"
+                        height="20"
+                        className="d-inline-block align-text-center"
+                    />
+                </a>
+
+
+                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
