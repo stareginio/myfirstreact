@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import employeeService from '../services/employeeService'
-import '../styles/Employee.css';
+import employeeService from '../services/EmployeeService'
 
 const Employee = () => {
     const [employees, setEmployees] = useState([])
@@ -21,8 +20,6 @@ const Employee = () => {
 
     return (
         <div id="employee">
-            <hr />
-
             <h2>List of Employees</h2>
             <table border="1.5">
                 <tr>

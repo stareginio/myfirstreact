@@ -26,6 +26,34 @@ hr {
     margin: 2.5ch 0 2.5ch 0 !important;
 }
 
+h2 {
+    font-size: 30px;
+    color: rgba(185, 45, 122, 0.849);
+    padding-bottom: 15px;
+    text-shadow: -1px -1px 0 rgba(184, 184, 184, 0.795),
+                    1px -1px 0 rgba(184, 184, 184, 0.795),
+                    -1px 1px 0 rgba(184, 184, 184, 0.795),
+                    1px 1px 0 rgba(184, 184, 184, 0.795); 
+}
+
+form {
+    font-size: 15px;
+}
+
+td {
+    font-size: 15px;
+    line-height: 30px;
+    padding: 5px 45px 5px 45px;
+}
+
+tr:nth-child(even) {
+    background: rgba(143, 110, 130, 0.514);
+}
+
+tr:nth-child(1) {
+    background: rgba(175, 77, 126, 0.829);
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 100s linear;
