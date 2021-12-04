@@ -1,8 +1,8 @@
-.App {
+.Home {
   text-align: center;
 }
 
-.App-header {
+.Home-header {
   background-image: url(grass.png);
   min-height: 100vh;
   display: flex;
@@ -13,7 +13,7 @@
   color: white;
 }
 
-.App-logo {
+.Home-logo {
   margin-top: .95in;
   margin-bottom: 10px;
   height: 20vmin;
@@ -25,7 +25,7 @@ header {
 }
 
 h1 {
-  margin-bottom: -15px;
+  margin-bottom: 5px;
 }
 
 #hello {
@@ -45,11 +45,11 @@ hr {
   line-height: 30px;
 }
 
-.App-gif {
+.Home-gif {
   margin: 40px 0 20px 0;
 }
 
-.App-link {
+.Home-link {
   color: #ff99cc;
 }
 
@@ -64,12 +64,12 @@ hr {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 100s linear;
+  .Home-logo {
+    animation: Home-logo-spin infinite 100s linear;
   }
 }
 
-@keyframes App-logo-spin {
+@keyframes Home-logo-spin {
   from {
     transform: rotate(0deg);
   }
