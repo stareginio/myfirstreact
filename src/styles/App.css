@@ -14,10 +14,10 @@
 }
 
 .App-logo {
-  margin-top: .65in;
+  margin-top: .95in;
+  margin-bottom: 10px;
   height: 20vmin;
   pointer-events: none;
-  margin-bottom: 10px;
 }
 
 header {

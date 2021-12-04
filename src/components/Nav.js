@@ -2,7 +2,7 @@ import '../styles/Nav.css';
 
 const Nav = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark">
+        <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
             <div className="container-fluid">
                 <a class="navbar-brand" href="#">Snail</a>
 
