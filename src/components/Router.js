@@ -22,6 +22,6 @@ const Router = () => {
 
 export default Router;
 
-// directory for github page
-// https://dev.to/janjibdev/problem-with-react-router-app-and-github-pages-lij
 // add/remove "/myfirstreact"
+// directory for github page
+// reference: https://dev.to/janjibdev/problem-with-react-router-app-and-github-pages-lij
