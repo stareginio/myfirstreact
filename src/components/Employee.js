@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import employeeService from '../services/EmployeeService'
 
 const Employee = () => {
@@ -13,7 +14,7 @@ const Employee = () => {
             )
             .catch(
                 () => {
-                    console.log('sorry na ha :P')
+                    console.log('something went wrong...')
                 }
             )
     })
@@ -26,6 +27,7 @@ const Employee = () => {
                     <td>Name</td>
                     <td>Department</td>
                     <td>Location</td>
+                    <td>Action</td>
                 </tr>
                 {
                     employees.map(
@@ -34,6 +36,16 @@ const Employee = () => {
                                 <td>{employee.name}</td>
                                 <td>{employee.department}</td>
                                 <td>{employee.location}</td>
+                                <td>
+                                    <Link
+                                        className="btn btn-primary"
+                                        to={'employees/edit/${employee.id}'}
+                                    >
+
+                                        Update
+                                    </Link>
+
+                                </td>
                             </tr>
                         )
                     )
