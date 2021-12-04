@@ -1,26 +1,5 @@
-.Home-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.Home-logo {
-  margin-top: .95in;
-  margin-bottom: 10px;
-  height: 20vmin;
-  pointer-events: none;
-}
-
-header {
+.Home {
   padding-bottom: 3em;
-}
-
-h1 {
-  margin-bottom: 5px;
 }
 
 #hello {
@@ -28,12 +7,6 @@ h1 {
   font-style: oblique;
   color: white;
   margin-bottom: 2.5em;
-}
-
-hr {
-  border: 2px dashed white !important;
-  width: 40ch !important;
-  margin: 2.5ch 0 2.5ch 0 !important;
 }
 
 #greet {
@@ -56,19 +29,4 @@ hr {
   right: 0;
   bottom: 0;
   background:rgba(0,0,0,0);
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .Home-logo {
-    animation: Home-logo-spin infinite 100s linear;
-  }
-}
-
-@keyframes Home-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

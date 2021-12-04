@@ -21,6 +21,8 @@ const Employee = () => {
 
     return (
         <div id="employee">
+            <hr />
+
             <h2>List of Employees</h2>
             <table border="1.5">
                 <tr>

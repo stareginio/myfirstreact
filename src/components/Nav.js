@@ -14,9 +14,9 @@ const Nav = () => {
                     <div className="navbar-nav" id="navbarNavAltMarkup">
                         <a className="nav-link" aria-current="page" href="/">Home</a>
                         <a className="nav-link" href="/employee">Employees</a>
-                        <a className="nav-link" href="/">Add Employees</a>
-                        <a className="nav-link" href="/">Edit Employees</a>
-                        <a className="nav-link" href="/">Remove Employees</a>
+                        <a className="nav-link" href="/add">Add Employees</a>
+                        <a className="nav-link" href="/edit">Edit Employees</a>
+                        <a className="nav-link" href="/remove">Remove Employees</a>
                         <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
                     </div>
                 </div>
