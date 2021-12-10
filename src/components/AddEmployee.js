@@ -38,7 +38,7 @@ const AddEmployee = () => {
         // updates existing employee
         if (employeeId) {
             const employee = { employeeId, name, location, department };
-            employeeService.postEmployee(employee) //promise
+            employeeService.putEmployee(employee) //promise
                 .then(
                     response => {
                         console.log('updated employee!', response.data)
