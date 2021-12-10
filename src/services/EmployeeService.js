@@ -13,7 +13,7 @@ const putEmployee = (data) => {
 }
 
 const getEmployee = (employeeId) => {
-    return httpclient.get(`/employees/${employeeId}`)   // note: backtick
+    return httpclient.get(`/employees/${employeeId}`)   // note: backticks
 }
 
 export default { getEmployees, postEmployee, putEmployee, getEmployee };

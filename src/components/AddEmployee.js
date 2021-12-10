@@ -21,7 +21,7 @@ const AddEmployee = () => {
                     }
                 )
                 .catch(
-                    error => {
+                    () => {
                         console.log("something went wrong...")
                     }
                 )
@@ -45,9 +45,8 @@ const AddEmployee = () => {
                         navigate('/employees');
                     }
                 )
-
                 .catch(
-                    error => {
+                    () => {
                         console.error('something went wrong...')
                     }
                 )
@@ -63,9 +62,8 @@ const AddEmployee = () => {
                         navigate('/employees')
                     }
                 )
-
                 .catch(
-                    error => {
+                    () => {
                         console.error('something went wrong...')
                     }
                 )
