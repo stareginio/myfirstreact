@@ -80,13 +80,13 @@ const AddEmployee = () => {
                 <div className="form-entry">
                     <label
                         for="InputName"
-                        class="form-label">
+                        className="form-label">
 
                         Name
                     </label>
                     <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         id="InputName"
                         placeholder="Enter the name"
                         onChange={
@@ -100,13 +100,13 @@ const AddEmployee = () => {
                 <div className="form-entry">
                     <label
                         for="InputDepartment"
-                        class="form-label">
+                        className="form-label">
 
                         Department
                     </label>
                     <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         id="InputDepartment"
                         placeholder="Enter the department"
                         onChange={
@@ -120,13 +120,13 @@ const AddEmployee = () => {
                 <div className="form-entry">
                     <label
                         for="InputLocation"
-                        class="form-label">
+                        className="form-label">
 
                         Location
                     </label>
                     <input
                         type="text"
-                        class="form-control"
+                        className="form-control"
                         id="InputLocation"
                         placeholder="Enter the location"
                         onChange={
