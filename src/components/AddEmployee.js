@@ -22,7 +22,7 @@ const AddEmployee = () => {
                 )
                 .catch(
                     error => {
-                        console.error("something went wrong...")
+                        console.log("something went wrong...")
                     }
                 )
         }
@@ -41,8 +41,8 @@ const AddEmployee = () => {
             employeeService.putEmployee(employee) //promise
                 .then(
                     response => {
-                        console.log('updated employee!', response.data)
-                        navigate('/employee')
+                        console.log('updated an existing employee!', response.data)
+                        navigate('/employees')
                     }
                 )
 
@@ -60,7 +60,7 @@ const AddEmployee = () => {
                 .then(
                     response => {
                         console.log('added new employee!', response.data)
-                        navigate('/employee')
+                        navigate('/employees')
                     }
                 )
 
