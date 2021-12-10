@@ -25,7 +25,7 @@ const Nav = () => {
 
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <div className="navbar-nav" id="navbarNavAltMarkup">
-                        <a className="nav-link" aria-current="page" href="/myfirstreact">Home</a>
+                        <a className="nav-link" aria-current="page" href="/">Home</a>
                         <a className="nav-link" href="/employees">Employees</a>
                         <a className="nav-link" href="/add">Add Employees</a>
                         <a className="nav-link" href="/remove">Remove Employees</a>
