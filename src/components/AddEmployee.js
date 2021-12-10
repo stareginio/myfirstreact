@@ -12,7 +12,7 @@ const AddEmployee = () => {
 
     useEffect(() => {
         if (employeeId) {
-            employeeService.getEmployee(employeeId)
+            employeeService.getEmployee(employeeId) // promise
                 .then(
                     response => {
                         setName(response.data.name);
@@ -38,11 +38,11 @@ const AddEmployee = () => {
         // updates existing employee
         if (employeeId) {
             const employee = { employeeId, name, location, department };
-            employeeService.putEmployee(employee) //promise
+            employeeService.putEmployee(employee) // promise
                 .then(
                     response => {
-                        console.log('updated an existing employee!', response.data)
-                        navigate('/employees')
+                        console.log('updated an existing employee!', response.data);
+                        navigate('/employees');
                     }
                 )
 
