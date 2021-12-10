@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useNavigate, useParams } from 'react-router'
 import employeeService from '../services/EmployeeService';
 
@@ -8,14 +8,36 @@ const AddEmployee = () => {
     const [location, setLocation] = useState('');
     const [department, setDepartment] = useState('');
     const navigate = useNavigate();
-    const { id } = useParams();
+    const { employeeId } = useParams();
+
+    useEffect(() => {
+        if (employeeId) {
+            employeeService.getEmployee(employeeId)
+                .then(
+                    response => {
+                        setName(response.data.name);
+                        setLocation(response.data.location);
+                        setDepartment(response.data.department);
+                    }
+                )
+                .catch(
+                    error => {
+                        console.error("error!")
+                    }
+                )
+        }
+
+        else {
+            console.log("employee ID does not exist...")
+        }
+    })
 
     const saveEmployee = (e) => {
         e.preventDefault();
 
         // updates existing employee
-        if (id) {
-            const employee = { id, name, location, department };
+        if (employeeId) {
+            const employee = { employeeId, name, location, department };
             employeeService.postEmployee(employee) //promise
                 .then(
                     response => {
