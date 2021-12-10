@@ -32,7 +32,7 @@ const Employee = () => {
                 {
                     employees.map(
                         employee => (
-                            <tr>
+                            <tr key={employee.employeeId}>
                                 <td>{employee.name}</td>
                                 <td>{employee.department}</td>
                                 <td>{employee.location}</td>
@@ -40,7 +40,7 @@ const Employee = () => {
                                     <Link
                                         className="btn btn-primary"
                                         id="UpdateButton"
-                                        to={'employees/edit/${employee.id}'}
+                                        to={'/edit/${employee.employeeId}'}
                                     >
 
                                         Update

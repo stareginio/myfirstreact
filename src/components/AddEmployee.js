@@ -22,7 +22,7 @@ const AddEmployee = () => {
                 )
                 .catch(
                     error => {
-                        console.error("error!")
+                        console.error("something went wrong...")
                     }
                 )
         }
@@ -30,7 +30,7 @@ const AddEmployee = () => {
         else {
             console.log("employee ID does not exist...")
         }
-    })
+    }, [])  // empty array for entering fields
 
     const saveEmployee = (e) => {
         e.preventDefault();
