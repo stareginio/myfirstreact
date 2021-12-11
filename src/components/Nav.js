@@ -37,5 +37,3 @@ const Nav = () => {
 }
 
 export default Nav;
-
-// add/remove "/myfirstreact"
