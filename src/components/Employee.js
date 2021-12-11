@@ -25,14 +25,16 @@ const Employee = () => {
 
     const deleteEmployee = (employeeId) => {
         employeeService.deleteEmployee(employeeId)
-            .then(response => {
-                console.log('successfully deleted the employee!')
-            }
+            .then(
+                response => {
+                    console.log('successfully deleted the employee!', response.data)
+                }
             )
             .catch(
                 err => {
                     console.error('something went wrong... could not delete the employee...', err)
-                })
+                }
+            )
     }
 
     return (
