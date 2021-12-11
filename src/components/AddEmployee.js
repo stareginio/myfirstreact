@@ -25,7 +25,7 @@ const AddEmployee = () => {
                 )
                 .catch(
                     () => {
-                        console.error('something went wrong...')
+                        console.error('something went wrong... could not update an existing employee...')
                     }
                 )
         }
@@ -42,7 +42,7 @@ const AddEmployee = () => {
                 )
                 .catch(
                     () => {
-                        console.error('something went wrong...')
+                        console.error('something went wrong... could not add a new employee...')
                     }
                 )
         }
