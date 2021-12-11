@@ -50,13 +50,13 @@ const Employee = () => {
                                         Update
                                     </Link>
 
-                                    <button
+                                    <div
                                         className="btn btn-primary"
                                         id="DeleteButton"
                                     >
 
                                         Delete
-                                    </button>
+                                    </div>
 
                                 </td>
                             </tr>
