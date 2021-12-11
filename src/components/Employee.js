@@ -6,6 +6,10 @@ const Employee = () => {
     const [employees, setEmployees] = useState([])
 
     useEffect(() => {
+        refreshEmployeeTable();
+    })
+
+    const refreshEmployeeTable = () => {
         employeeService.getEmployees()   // promise
             .then(
                 response => {
@@ -17,7 +21,7 @@ const Employee = () => {
                     console.log('something went wrong...')
                 }
             )
-    })
+    }
 
     return (
         <div id="employee">
@@ -45,6 +49,14 @@ const Employee = () => {
 
                                         Update
                                     </Link>
+
+                                    <button
+                                        className="btn btn-primary"
+                                        id="DeleteButton"
+                                    >
+
+                                        Delete
+                                    </button>
 
                                 </td>
                             </tr>
