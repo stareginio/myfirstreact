@@ -10,28 +10,6 @@ const AddEmployee = () => {
     const navigate = useNavigate();
     const { employeeId } = useParams();
 
-    useEffect(() => {
-        if (employeeId) {
-            employeeService.getEmployee(employeeId) // promise
-                .then(
-                    response => {
-                        setName(response.data.name);
-                        setLocation(response.data.location);
-                        setDepartment(response.data.department);
-                    }
-                )
-                .catch(
-                    () => {
-                        console.log("something went wrong...")
-                    }
-                )
-        }
-
-        else {
-            console.log("employee ID does not exist...")
-        }
-    }, [])  // empty array for entering fields
-
     const saveEmployee = (e) => {
         e.preventDefault();
 
@@ -70,6 +48,25 @@ const AddEmployee = () => {
         }
     }
 
+    useEffect(() => {
+        if (employeeId) {
+            employeeService.getEmployee(employeeId) // promise
+                .then(
+                    employee => {
+                        setName(employee.data.name);
+                        setLocation(employee.data.location);
+                        setDepartment(employee.data.department);
+                    }
+                )
+                .catch(
+                    () => {
+                        console.log("something went wrong...")
+                    }
+                )
+        }
+
+    }, [])  // empty array for entering fields
+
     return (
         <div>
             <h2>Add Employee</h2>
@@ -85,6 +82,7 @@ const AddEmployee = () => {
                     <input
                         type="text"
                         className="form-control"
+                        value={name}
                         id="InputName"
                         placeholder="Enter the name"
                         onChange={
@@ -105,6 +103,7 @@ const AddEmployee = () => {
                     <input
                         type="text"
                         className="form-control"
+                        value={department}
                         id="InputDepartment"
                         placeholder="Enter the department"
                         onChange={
@@ -125,6 +124,7 @@ const AddEmployee = () => {
                     <input
                         type="text"
                         className="form-control"
+                        value={location}
                         id="InputLocation"
                         placeholder="Enter the location"
                         onChange={
