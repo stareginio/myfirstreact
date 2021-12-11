@@ -65,6 +65,7 @@ const Employee = () => {
                                     <div
                                         className="btn btn-primary"
                                         id="DeleteButton"
+                                        onClick={() => deleteEmployee(employee.employeeId)}
                                     >
 
                                         Delete
