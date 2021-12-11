@@ -7,44 +7,84 @@ const AddEmployee = () => {
     const [name, setName] = useState('');
     const [location, setLocation] = useState('');
     const [department, setDepartment] = useState('');
-    const navigate = useNavigate();
     const { employeeId } = useParams();
+
+    const navigate = useNavigate();
+    const regex = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;
+
+    // validates input name
+    const handleNameChange = (e) => {
+        if (e.target.value.match(regex) != null) {
+            setName(e.target.value)
+        }
+        else {
+            console.error('invalid character')
+        }
+    }
+
+    // validates input location
+    const handleLocationChange = (e) => {
+        if (e.target.value.match(regex) != null) {
+            setLocation(e.target.value)
+        }
+        else {
+            console.error('invalid character')
+        }
+    }
+
+    // validates input department
+    const handleDepartmentChange = (e) => {
+        if (e.target.value.match(regex) != null) {
+            setDepartment(e.target.value)
+        }
+        else {
+            console.error('invalid character')
+        }
+    }
 
     const saveEmployee = (e) => {
         e.preventDefault();
 
-        // updates existing employee
-        if (employeeId) {
-            const employee = { employeeId, name, location, department };
-            employeeService.putEmployee(employee) // promise
-                .then(
-                    response => {
-                        console.log('updated an existing employee!', response.data);
-                        navigate('/employees');
-                    }
-                )
-                .catch(
-                    err => {
-                        console.error('something went wrong... could not update an existing employee...', err)
-                    }
-                )
+        // checks if each entry is not empty
+        if (name && location && department) {
+            // updates existing employee
+            if (employeeId) {
+                const employee = { employeeId, name, location, department };
+                employeeService.putEmployee(employee) // promise
+                    .then(
+                        response => {
+                            console.log('updated an existing employee!', response.data);
+                            navigate('/employees');
+                        }
+                    )
+                    .catch(
+                        err => {
+                            console.error('something went wrong... could not update an existing employee...', err)
+                        }
+                    )
+            }
+
+            // adds new employee
+            else {
+                const employee = { name, location, department };
+                employeeService.postEmployee(employee) // promise
+                    .then(
+                        response => {
+                            console.log('added a new employee!', response.data)
+                            navigate('/employees')
+                        }
+
+                    )
+                    .catch(
+                        err => {
+                            console.error('something went wrong... could not add a new employee...', err)
+                        }
+                    )
+            }
         }
 
-        // adds new employee
         else {
-            const employee = { name, location, department };
-            employeeService.postEmployee(employee) // promise
-                .then(
-                    response => {
-                        console.log('added new employee!', response.data)
-                        navigate('/employees')
-                    }
-                )
-                .catch(
-                    err => {
-                        console.error('something went wrong... could not add a new employee...', err)
-                    }
-                )
+            console.error('entries are invalid...')
         }
     }
 
@@ -85,11 +125,7 @@ const AddEmployee = () => {
                         value={name}
                         id="InputName"
                         placeholder="Enter the name"
-                        onChange={
-                            (e) => {
-                                setName(e.target.value)
-                            }
-                        }
+                        onChange={handleNameChange}
                     />
                 </div>
 
@@ -106,11 +142,7 @@ const AddEmployee = () => {
                         value={department}
                         id="InputDepartment"
                         placeholder="Enter the department"
-                        onChange={
-                            (e) => {
-                                setDepartment(e.target.value)
-                            }
-                        }
+                        onChange={handleDepartmentChange}
                     />
                 </div>
 
@@ -127,11 +159,7 @@ const AddEmployee = () => {
                         value={location}
                         id="InputLocation"
                         placeholder="Enter the location"
-                        onChange={
-                            (e) => {
-                                setLocation(e.target.value)
-                            }
-                        }
+                        onChange={handleLocationChange}
                     />
                 </div>
 
@@ -149,3 +177,7 @@ const AddEmployee = () => {
 }
 
 export default AddEmployee;
+
+// references
+// regex: https://stackoverflow.com/questions/52487915/regular-expression-to-validate-accents-spaces-and-only-letters
+// validation: https://stackoverflow.com/questions/41936524/validation-of-form-input-fields-in-react
