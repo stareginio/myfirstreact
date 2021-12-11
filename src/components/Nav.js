@@ -5,7 +5,7 @@ const Nav = () => {
     return (
         <nav className="navbar fixed-top navbar-expand-lg navbar-dark">
             <div className="container-fluid">
-                <a className="navbar-brand" href="https://github.com/stareginio/myfirstreact">
+                <a className="navbar-brand" href="/">
                     Snail
 
                     <img
@@ -28,8 +28,6 @@ const Nav = () => {
                         <a className="nav-link" aria-current="page" href="/">Home</a>
                         <a className="nav-link" href="/employees">Employees</a>
                         <a className="nav-link" href="/add">Add Employees</a>
-                        <a className="nav-link" href="/remove">Remove Employees</a>
-                        <a className="nav-link" href="/edit">Edit Employees</a>
                         <a className="nav-link disabled" href="/" tabindex="-1" aria-disabled="true">Disabled</a>
                     </div>
                 </div>

@@ -12,6 +12,7 @@
 
 .Home-link:hover {
   color: rgba(196, 121, 240, 0.849);
+  transition: all 0.2s ease-in-out;
 }
 
 #smol {
