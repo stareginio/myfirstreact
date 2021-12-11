@@ -69,13 +69,14 @@ label {
 }
 
 button {
-    background-color: rgb(192, 89, 140, 0.85) !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgb(192, 89, 140, 0.95) !important;
     border: none !important;
     width: 15ch;
     height: 4ch;
     font-family: 'Courier New', Helvetica, sans-serif !important;
-    color: white;
     font-size: .65em !important;
+    transition: all 0.2s ease-in-out;
 }
 
 #ctr-button {
@@ -90,7 +91,8 @@ button {
 }
 
 #UpdateButton {
-    background-color: rgb(192, 89, 140, 0.85) !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(43, 166, 223, 0.85) !important;
     border: none !important;
     width: 12ch;
     font-size: 13.5px;
@@ -99,7 +101,8 @@ button {
 }
 
 #DeleteButton {
-    background-color: rgb(192, 89, 140, 0.85) !important;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(209, 111, 46, 0.85) !important;
     border: none !important;
     width: 12ch;
     font-size: 13.5px;
@@ -109,6 +112,11 @@ button {
 
 #SaveButton {
     margin-top: 25px;
+}
+
+button:hover, #UpdateButton:hover, #DeleteButton:hover {
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 15px rgba(212, 166, 197, 0.4); 
 }
 
 td {
