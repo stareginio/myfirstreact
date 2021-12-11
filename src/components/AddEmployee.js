@@ -73,7 +73,6 @@ const AddEmployee = () => {
                             console.log('added a new employee!', response.data)
                             navigate('/employees')
                         }
-
                     )
                     .catch(
                         err => {
