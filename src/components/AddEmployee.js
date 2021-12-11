@@ -84,7 +84,7 @@ const AddEmployee = () => {
         }
 
         else {
-            console.error('entries are invalid...')
+            console.error('please fill up each entry...')
         }
     }
 
