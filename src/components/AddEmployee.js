@@ -55,7 +55,7 @@ const AddEmployee = () => {
         // adds new employee
         else {
             const employee = { name, location, department };
-            employeeService.postEmployee(employee) //promise
+            employeeService.postEmployee(employee) // promise
                 .then(
                     response => {
                         console.log('added new employee!', response.data)
