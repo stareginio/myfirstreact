@@ -8,7 +8,7 @@ import Nav from './components/Nav';
 // functional component = stateless component
 function App() {
   return (
-    <div >
+    <div>
       <Nav />
       <div className="App">
         <Logo />
