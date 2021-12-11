@@ -40,7 +40,7 @@ const Employee = () => {
                                     <Link
                                         className="btn btn-primary"
                                         id="UpdateButton"
-                                        to={`/edit/${employee.employeeId}`} // note: backticks
+                                        to={`/employees/edit/${employee.employeeId}`} // note: backticks
                                     >
 
                                         Update
