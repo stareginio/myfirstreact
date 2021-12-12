@@ -85,9 +85,10 @@ const AddEmployee = () => {
             }
         }
 
+        // shows an error message if otherwise
         else {
             console.error('please fill up each entry...');
-            setError('Please fill up each entry');  // shows error message
+            setError('Please fill up each entry');
         }
     }
 
