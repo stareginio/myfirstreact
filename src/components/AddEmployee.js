@@ -10,7 +10,7 @@ const AddEmployee = () => {
     const { employeeId } = useParams();
 
     const navigate = useNavigate();
-    const regex = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;
+    const regex = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;   // accepts only either accented or non-accented letters
     const [error, setError] = useState('');
 
     // validates input name
