@@ -136,7 +136,7 @@ tr:nth-child(1) {
 #error {
     color: rgba(243, 178, 82, 0.849);
     margin-top: 3px;
-    font-size: 14px;
+    font-size: 14.5px;
     font-style: italic;
     text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.795),
                     1px -1px 0 rgba(0, 0, 0, 0.795),
