@@ -111,7 +111,8 @@ button {
 }
 
 #SaveButton {
-    margin-top: 25px;
+    margin-top: 30px;
+    margin-bottom: -2px;
 }
 
 button:hover, #UpdateButton:hover, #DeleteButton:hover {
@@ -131,6 +132,16 @@ tr:nth-child(even) {
 
 tr:nth-child(1) {
     background: rgba(175, 77, 126, 0.83);
+}
+
+.error {
+    color: rgba(243, 178, 82, 0.849);
+    font-size: 14px;
+    font-style: italic;
+    text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.795),
+                    1px -1px 0 rgba(0, 0, 0, 0.795),
+                    -1px 1px 0 rgba(0, 0, 0, 0.795),
+                    1px 1px 0 rgba(0, 0, 0, 0.795); 
 }
 
 @media (prefers-reduced-motion: no-preference) {

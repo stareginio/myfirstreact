@@ -11,6 +11,7 @@ const AddEmployee = () => {
 
     const navigate = useNavigate();
     const regex = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;
+    const [error, setError] = useState('');
 
     // validates input name
     const handleNameChange = (e) => {
@@ -47,6 +48,8 @@ const AddEmployee = () => {
 
         // checks if each entry is not empty
         if (name && location && department) {
+            setError('');  // clears error message
+
             // updates existing employee
             if (employeeId) {
                 const employee = { employeeId, name, location, department };
@@ -83,7 +86,8 @@ const AddEmployee = () => {
         }
 
         else {
-            console.error('please fill up each entry...')
+            console.error('please fill up each entry...');
+            setError('Please fill up each entry');  // shows error message
         }
     }
 
@@ -170,6 +174,8 @@ const AddEmployee = () => {
 
                     Save
                 </button>
+
+                <p>{error && <span className="error">{error}</span>}</p>
             </form >
         </div >
     )
