@@ -55,24 +55,23 @@ const Employee = () => {
                                 <td>{employee.department}</td>
                                 <td>{employee.location}</td>
                                 <td>
-                                    <Link
-                                        className="btn btn-primary"
-                                        id="UpdateButton"
-                                        to={`/myfirstreact/employees/edit/${employee.employeeId}`} // note: backticks
-                                    >
+                                    <div className="d-grid gap-2 d-md-flex">
+                                        <Link
+                                            className="btn btn-primary"
+                                            id="UpdateButton"
+                                            to={`/myfirstreact/employees/edit/${employee.employeeId}`} // note: backticks
+                                        >
+                                            Update
+                                        </Link>
 
-                                        Update
-                                    </Link>
-
-                                    <div
-                                        className="btn btn-primary"
-                                        id="DeleteButton"
-                                        onClick={() => deleteEmployee(employee.employeeId)}
-                                    >
-
-                                        Delete
+                                        <div
+                                            className="btn btn-primary"
+                                            id="DeleteButton"
+                                            onClick={() => deleteEmployee(employee.employeeId)}
+                                        >
+                                            Delete
+                                        </div>
                                     </div>
-
                                 </td>
                             </tr>
                         )
