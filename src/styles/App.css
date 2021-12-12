@@ -112,7 +112,7 @@ button {
 
 #SaveButton {
     margin-top: 30px;
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 button:hover, #UpdateButton:hover, #DeleteButton:hover {
@@ -134,7 +134,7 @@ tr:nth-child(1) {
     background: rgba(175, 77, 126, 0.83);
 }
 
-.error {
+#error {
     color: rgba(243, 178, 82, 0.849);
     font-size: 14px;
     font-style: italic;
