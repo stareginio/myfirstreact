@@ -8,10 +8,11 @@ const AddEmployee = () => {
     const [location, setLocation] = useState('');
     const [department, setDepartment] = useState('');
     const { employeeId } = useParams();
-
-    const navigate = useNavigate();
-    const regex = /^[ a-zA-ZÀ-ÿ\u00f1\u00d1]*$/g;   // accepts only either accented or non-accented letters
     const [error, setError] = useState('');
+
+    // accepts only either accented or non-accented letters; spaces are only allowed after a letter
+    const regex = /^([a-zA-ZÀ-ÿ\u00f1\u00d1]+ ?)*$/;
+    const navigate = useNavigate();
 
     // validates input name
     const handleNameChange = (e) => {
@@ -185,6 +186,7 @@ const AddEmployee = () => {
 export default AddEmployee;
 
 // references
-// regex: https://stackoverflow.com/questions/52487915/regular-expression-to-validate-accents-spaces-and-only-letters
+// regex (letters): https://stackoverflow.com/questions/52487915/regular-expression-to-validate-accents-spaces-and-only-letters
+// regex (spaces): https://stackoverflow.com/questions/15472764/regular-expression-to-allow-spaces-between-words
 // validation: https://stackoverflow.com/questions/41936524/validation-of-form-input-fields-in-react
 // error message: https://stackoverflow.com/questions/61742083/alert-in-if-else-statement-in-react-js
