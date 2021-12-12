@@ -176,7 +176,7 @@ const AddEmployee = () => {
                     Save
                 </button>
 
-                {error && <p className="error" id="error">{error}</p>}
+                <p id="error">{error && <p className="error">{error}</p>}</p>
             </form >
         </div >
     )
