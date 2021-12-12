@@ -1,7 +1,6 @@
 # Getting Started with myfirstreact
 
 This project is about the first React app of Sophie.
-You will mostly see snails in this app. 
 
 ## Home
 The home page consists of a counter with an add and reset button. Each click on the add button will increment the counter. There are also a few lines of greetings below it. Under the snail gif is a link to a Youtube video.
