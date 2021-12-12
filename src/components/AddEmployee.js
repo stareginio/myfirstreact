@@ -186,3 +186,4 @@ export default AddEmployee;
 // references
 // regex: https://stackoverflow.com/questions/52487915/regular-expression-to-validate-accents-spaces-and-only-letters
 // validation: https://stackoverflow.com/questions/41936524/validation-of-form-input-fields-in-react
+// error message: https://stackoverflow.com/questions/61742083/alert-in-if-else-statement-in-react-js
