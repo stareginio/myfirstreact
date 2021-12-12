@@ -58,7 +58,7 @@ const AddEmployee = () => {
                     .then(
                         response => {
                             console.log('updated an existing employee!', response.data);
-                            navigate('/myfirstreact/employees');
+                            navigate('/employees');
                         }
                     )
                     .catch(
@@ -75,7 +75,7 @@ const AddEmployee = () => {
                     .then(
                         response => {
                             console.log('added a new employee!', response.data)
-                            navigate('/myfirstreact/employees')
+                            navigate('/employees')
                         }
                     )
                     .catch(
