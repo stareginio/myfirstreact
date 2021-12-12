@@ -18,7 +18,7 @@ const Employee = () => {
             )
             .catch(
                 err => {
-                    console.log('something went wrong...', err)
+                    console.log('something went wrong... could not refresh the employee table...', err)
                 }
             )
     }
@@ -27,7 +27,7 @@ const Employee = () => {
         employeeService.deleteEmployee(employeeId)
             .then(
                 response => {
-                    console.log('successfully deleted the employee!', response.data)
+                    console.log('employee deleted!', response.data)
                 }
             )
             .catch(
