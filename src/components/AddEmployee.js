@@ -7,12 +7,12 @@ const AddEmployee = () => {
     const [name, setName] = useState('');
     const [location, setLocation] = useState('');
     const [department, setDepartment] = useState('');
-    const { employeeId } = useParams();
     const [error, setError] = useState('');
+    const { employeeId } = useParams();
+    const navigate = useNavigate();
 
     // accepts only either accented or non-accented letters; spaces are only allowed after a letter
     const regex = /^([a-zA-ZÀ-ÿ\u00f1\u00d1]+ ?)*$/;
-    const navigate = useNavigate();
 
     // validates input name
     const handleNameChange = (e) => {
